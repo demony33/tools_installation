@@ -9,6 +9,11 @@ fi
 printf "\x1b[32m ---> [ Installing jq ]\\x1b[0m\n"; # jq
 apt install jq
 
+printf "\x1b[32m ---> [ update sourceslist ubuntu20.4 ]\\x1b[0m\n"; 
+cd /etc/apt/
+echo "deb http://th.archive.ubuntu.com/ubuntu jammy main" >> sources.list
+sudo apt update && sudo apt install libc6
+cd ~
 
 printf "\x1b[32m ---> [ Installing Go-lang ]\\x1b[0m\n"; # Go-lang
 wget https://go.dev/dl/go1.20.3.linux-amd64.tar.gz
@@ -79,6 +84,7 @@ chmod +x nuclei subfinder httpx shuffledns katana dnsx
 cp nuclei subfinder httpx shuffledns katana /usr/bin/
 
 printf "\x1b[32m ---> [Install naabu]\\x1b[0m\n"; #pdtm can't install
+
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 cd ~/go/bin
 chmod +x naabu
