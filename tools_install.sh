@@ -78,7 +78,7 @@ chmod +x pdtm
 cp ~/go/bin/pdtm /usr/bin/
 
 printf "\x1b[32m ---> [Install projectdiscovery_tools]\\x1b[0m\n";
-pdtm -i nuclei,subfinder,httpx,shuffledns,katana,dnsx # projectdiscovery_tools
+pdtm -i nuclei,subfinder,httpx,shuffledns,katana,dnsx,notify # projectdiscovery_tools
 cd $HOME/.pdtm/go/bin/
 chmod +x nuclei subfinder httpx shuffledns katana dnsx notify
 cp nuclei subfinder httpx shuffledns katana notify /usr/bin/
