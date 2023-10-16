@@ -9,10 +9,10 @@ fi
 printf "\x1b[32m ---> [ Installing jq ]\\x1b[0m\n"; # jq
 apt install jq
 
-printf "\x1b[32m ---> [ update sourceslist ubuntu20.4 ]\\x1b[0m\n"; 
-cd /etc/apt/
-echo "deb http://th.archive.ubuntu.com/ubuntu jammy main" >> sources.list
-sudo apt update && sudo apt install libc6
+#printf "\x1b[32m ---> [ update sourceslist ubuntu20.4 ]\\x1b[0m\n"; 
+#cd /etc/apt/
+#echo "deb http://th.archive.ubuntu.com/ubuntu jammy main" >> sources.list
+#sudo apt update && sudo apt install libc6
 cd ~
 
 printf "\x1b[32m ---> [ Installing Go-lang ]\\x1b[0m\n"; # Go-lang
